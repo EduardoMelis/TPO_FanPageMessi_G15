@@ -1,0 +1,25 @@
+*{
+    margin: 0%; /*Elimina todo margen que trae por defecto*/
+    padding: 0%; /*Elimina todo relleno que trae por defecto*/
+}
+
+
+/* Eliminar comportamiento en bloque de nav y la div */
+.topnav{
+    display: inline-block; /*Situa en linea el div y el nav*/
+    padding-right: 22vw; /*Separación a la derecha*/
+    padding-top: 3vh; /*Separación superior para el menu y logo*/
+}
+
+/* Estilo para el logo */
+/* Agregar  estilo: 
+de ancho, alto, borde radios y sombra.
+color sombra: rgba(83,175,236,0.8) */
+.logo{
+    display: flex;
+    align-items: center;
+    width: 5vw;  /*Ancho*/
+    height: auto;/*Altura*/
+    border-radius: 30% 30% 30% 30%;  /*Redondea dos vértices del logo(los extremos)*/
+    box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw rgba(83,175,236,0.8); /*Agrega sombra alrededor*/
+}
