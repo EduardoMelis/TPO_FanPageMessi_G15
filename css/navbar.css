@@ -1,14 +1,24 @@
 *{
     margin: 0%; /*Elimina todo margen que trae por defecto*/
     padding: 0%; /*Elimina todo relleno que trae por defecto*/
+    font-family:"messina";
+}
+/* se agrega fuente*/
+@font-face {
+    font-family:"messina" ;
+    src: url(../fonts/Messina/Messina.ttf);
 }
 
 
 /* Eliminar comportamiento en bloque de nav y la div */
 .topnav{
     display: inline-block; /*Situa en linea el div y el nav*/
-    padding-right: 22vw; /*Separación a la derecha*/
+    padding-right: 10vw; /*Separación a la derecha*/
+    padding-left: 5vw;
     padding-top: 3vh; /*Separación superior para el menu y logo*/
+    font-size: 1.5vw; 
+   
+
 }
 
 /* Estilo para el logo */
@@ -21,5 +31,24 @@ color sombra: rgba(83,175,236,0.8) */
     width: 5vw;  /*Ancho*/
     height: auto;/*Altura*/
     border-radius: 30% 30% 30% 30%;  /*Redondea dos vértices del logo(los extremos)*/
-    box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw rgba(83,175,236,0.8); /*Agrega sombra alrededor*/
+    box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw rgba(160, 172, 180, 0.8); /*Agrega sombra alrededor*/
+}
+.menu{
+    text-decoration:none;
+    color: rgb(117, 113, 113)
+    
+
+}
+header{
+
+    /* background: linear-gradient(rgb(61, 61, 253),white); */
+    background-image: url(../img/messi\ espalda.jpg);
+    
+    height:20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+
+
 }
