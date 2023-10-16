@@ -33,12 +33,9 @@ color sombra: rgba(83,175,236,0.8) */
     border-radius: 30% 30% 30% 30%;  /*Redondea dos vértices del logo(los extremos)*/
     box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw rgba(160, 172, 180, 0.8); /*Agrega sombra alrededor*/
 }
-.menu{
-    text-decoration:none;
-    color: rgb(117, 113, 113)
-    
+   
 
-}
+
 header{
 
     /* background: linear-gradient(rgb(61, 61, 253),white); */
@@ -52,3 +49,11 @@ header{
 
 
 }
+.menu:hover{
+   color: rgb(19, 107, 184);
+   margin-left: 1vw;
+   margin-right: 1vw;
+  
+
+}
+
