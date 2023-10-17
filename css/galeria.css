@@ -3,6 +3,7 @@
     padding: 0%; /*Elimina todo relleno que trae por defecto*/
 
 }
+/*se standarizo tamaño de imagenes */
  .medida_foto{
     
     width: 250px;
@@ -13,7 +14,7 @@
 
 }   
 
-
+/*se uso flex para acomodar las imagenes*/
 .l1{
     display:flex;
     gap: 5vw;
@@ -23,7 +24,7 @@
 
 }
 
-
+/*transicion contenedor l1 / hipervinculo a*/ 
 .l1 > a{
 
     transition: transform 0.4s ease-in-out;
@@ -34,7 +35,7 @@
     
 } 
 
-
+/*se puso un fondo al main*/
 main{
     background-color: #b5e2fa86;
 }
