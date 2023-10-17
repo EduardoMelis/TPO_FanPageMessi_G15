@@ -9,6 +9,7 @@
     height: 400px;  
     border-radius: 5%  ;
     margin-top: 2vw;
+    box-shadow: 0.5vw 0.5vw 0.5vw 0.5vw rgba(38, 41, 43, 0.8);
 
 }   
 
@@ -30,10 +31,11 @@
 
 .l1 > a:hover{
     transform: scale(1.25) translateX(1.5vw);
+    
 } 
 
 
 main{
-    background-color: rgb(212, 226, 238);
+    background-color: #b5e2fa86;
 }
 
