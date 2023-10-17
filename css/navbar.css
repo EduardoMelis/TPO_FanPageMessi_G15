@@ -76,10 +76,13 @@ header{
 
 @media screen and (max-width:600px) {
 
+    header{
+        height: 25vh ;
+    }
     .menu{
         display: flex;
         flex-direction: column;
-        height: 3vh;
+        height: 3.5vh;
         text-align: center;
         font-size: 5vw;
     }
