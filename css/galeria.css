@@ -48,3 +48,6 @@
 .l2 > img:hover{
     transform: scale(1.2) translateX(1.5vw);
     }
+    main{
+        background-color: rgb(212, 226, 238);
+    }
