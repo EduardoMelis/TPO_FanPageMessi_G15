@@ -1,12 +1,50 @@
-.medida_foto{
+*{ 
+    margin: 0%; /*Elimina todo margen que trae por defecto*/
+    padding: 0%; /*Elimina todo relleno que trae por defecto*/
+
+}
+ .medida_foto{
     
-    width: 26vw;
-    height: 26vh;
-    margin-top: 1vh;
+    width: 20vw;
+    height: 60vh;  
+    border-radius: 5%  ;
+    margin-top: 2vw;
+
+}   
 
 
-}
 .l1{
-    display: inline-block;
+    display:flex;
+    gap: 5vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 
 }
+
+
+.l1 > a{
+    transition: transform 0.4s ease-in-out;
+}
+
+.l1 > a:hover{
+    transform: scale(1.2) translateX(1.5vw);
+} 
+.l2{
+    display: flex;
+    gap: 5vw;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.l2 > img{
+    margin-top: 3vw;
+    border-radius: 5%;
+    width: 20vw;
+    height: 60vh;
+    transition:transform 0.4s ease-in-out;
+    
+}
+.l2 > img:hover{
+    transform: scale(1.2) translateX(1.5vw);
+    }

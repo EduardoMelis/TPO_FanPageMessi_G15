@@ -49,11 +49,21 @@ header{
 
 
 }
-.menu:hover{
-   color: rgb(19, 107, 184);
-   margin-left: 1vw;
-   margin-right: 1vw;
-  
+.menu{
+    text-decoration: none;
+    color: rgb(182, 23, 84);
 
 }
+.menu:hover{
+   color: rgb(13, 108, 192);
+   margin-left: 1vw;
+   margin-right: 1vw;
+   text-shadow: 0px 0px 25px rgba(243,13,193,1);
 
+}
+.menu[href="#"]{
+    color: rgb(13, 108, 192);
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-shadow: 0px 0px 25px rgba(243,13,193,1);
+}
