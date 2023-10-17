@@ -5,8 +5,8 @@
 }
  .medida_foto{
     
-    width: 20vw;
-    height: 60vh;  
+    width: 250px;
+    height: 400px;  
     border-radius: 5%  ;
     margin-top: 2vw;
 
@@ -24,30 +24,16 @@
 
 
 .l1 > a{
+
     transition: transform 0.4s ease-in-out;
 }
 
 .l1 > a:hover{
-    transform: scale(1.2) translateX(1.5vw);
+    transform: scale(1.25) translateX(1.5vw);
 } 
-.l2{
-    display: flex;
-    gap: 5vw;
-    flex-wrap: wrap;
-    justify-content: center;
-   
+
+
+main{
+    background-color: rgb(212, 226, 238);
 }
-.l2 > img{
-    margin-top: 3vw;
-    border-radius: 5%;
-    width: 20vw;
-    height: 60vh;
-    transition:transform 0.4s ease-in-out;
-    
-}
-.l2 > img:hover{
-    transform: scale(1.2) translateX(1.5vw);
-    }
-    main{
-        background-color: rgb(212, 226, 238);
-    }
+
