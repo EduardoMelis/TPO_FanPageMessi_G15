@@ -16,7 +16,7 @@
     padding-right: 10vw; /*Separación a la derecha*/
     padding-left: 3vw;
     padding-top: 3vh; /*Separación superior para el menu y logo*/
-    font-size: 1.5vw; 
+    
    
    
 
@@ -52,7 +52,7 @@ header{
     color: rgb(255, 255, 255);
     margin-left: 1vw;
     margin-right: 1vw;
-    font-size: 3.2vh;
+    font-size: 3vh;
 
 }
 /*decoracion para que menu se colore al pasar el cursor*/
@@ -87,7 +87,7 @@ header{
         font-size: 5vw;
     }
     .logo{
-        margin-bottom: 10vh;
+        margin-bottom: 12vh;
         width: 15vw;
     }
 }
