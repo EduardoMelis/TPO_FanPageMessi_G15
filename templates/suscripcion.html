@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/messi_icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/suscripcion.css">
+    
     <title>Suscripcion</title>
 </head>
 <body>
@@ -20,6 +22,69 @@
             <a class="menu" href="#">Suscribete</a>
         </nav>
     </header>
+    
+      <main>
+
+        <div class="container">
+
+          <div class="header">
+            <h2> Fomulario </h2>
+          </div>
+          
+          <form id="form" class="form">
+
+            <div class="form-control">
+              <label for="username">Nombre</label>
+              <input type="text" id="username" placeholder="Ingrese su Nombre..."/>
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensaje de error</small>
+            </div>
+          
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Ingrese su Email.." />
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensaje de error</small>
+            </div>
+          
+            <div class="form-control">
+              <label for="password">Contrasenia</label>
+              <input type="password"id="password" placeholder="Ingrese una contraseña..."/>
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensaje de error</small>
+            </div>
+          
+            <div class="form-control">
+              <label for="password-confirmation">Confirmacion de Contrasenia</label>
+              <input type="password" id="password-confirmation" placeholder="Confirme Contrasenia..." />
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensaje de error</small>
+            </div>
+
+
+            <button type="submit" class="btn-login">Enviar</button>
+
+          </form>
+
+        </div>
+    
+        <!--<ul class="star"></ul> -->  
+        <ul class="squares"></ul>   
+
+        <script src="https://kit.fontawesome.com/f9e19193d6.js"crossorigin="anonymous"></script>
+        <script src="/js/suscripcion.js"></script>
+
+
+      </main>
+
+        
+    
+
+
     
 </body>
 </html>
