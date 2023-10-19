@@ -1,0 +1,59 @@
+footer {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* position: absolute; */
+    /* align-items: center; */
+    /* justify-content: right; */
+    width: 100%;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(180deg, rgba(220, 229, 235, 1) 0%, rgba(100, 178, 210, 1) 59%);
+
+}
+
+.logo_div_foot {
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    /*Ancho*/
+    height: auto;
+    /*Altura*/
+    border-radius: 30% 30% 30% 30%;
+    /*Redondea dos vértices del logo(los extremos)*/
+    box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw rgba(231, 234, 236, 0.8);
+    /*Agrega sombra alrededor*/
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    font-size: 0.8rem;
+}
+
+.redes_sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_redes {
+    font-size: 30px;
+    color: #364552;
+    margin: 1rem;
+}
+
+.icon_redes:hover {
+    color: black;
+    transform: scale(1.2) translateX(0.2rem);
+    transition: 0.3s;
+}
