@@ -1,24 +1,30 @@
-*{
-    margin: 0%; /*Elimina todo margen que trae por defecto*/
-    padding: 0%; /*Elimina todo relleno que trae por defecto*/
-    font-family:"messina";
+* {
+    margin: 0%;
+    /*Elimina todo margen que trae por defecto*/
+    padding: 0%;
+    /*Elimina todo relleno que trae por defecto*/
+    font-family: "messina";
 }
+
 /* se agrega fuente*/
 @font-face {
-    font-family:"messina" ;
+    font-family: "messina";
     src: url(../fonts/Messina/Messina.ttf);
 }
 
 
 /* Eliminar comportamiento en bloque de nav y la div */
-.topnav{
-    display: inline-block; /*Situa en linea el div y el nav*/
-    padding-right: 10vw; /*Separación a la derecha*/
+.topnav {
+    display: inline-block;
+    /*Situa en linea el div y el nav*/
+    padding-right: 10vw;
+    /*Separación a la derecha*/
     padding-left: 3vw;
-    padding-top: 3vh; /*Separación superior para el menu y logo*/
-    
-   
-   
+    padding-top: 3vh;
+    /*Separación superior para el menu y logo*/
+
+
+
 
 }
 
@@ -26,46 +32,59 @@
 /* Agregar  estilo: 
 de ancho, alto, borde radios y sombra.
 color sombra: rgba(83,175,236,0.8) */
-.logo{
+.logo {
     display: flex;
-    align-items: center; 
-    width: 5vw;  /*Ancho*/
-    height: auto;/*Altura*/
-    border-radius: 30% 30% 30% 30%;  /*Redondea dos vértices del logo(los extremos)*/
-    box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw rgba(231, 234, 236, 0.8); /*Agrega sombra alrededor*/
+    align-items: center;
+    width: 5vw;
+    /*Ancho*/
+    height: auto;
+    /*Altura*/
+    border-radius: 30% 30% 30% 30%;
+    /*Redondea dos vértices del logo(los extremos)*/
+    box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw rgba(231, 234, 236, 0.8);
+    /*Agrega sombra alrededor*/
 }
-   
 
 
-header{
+
+header {
 
     /* background: linear-gradient */
-  
-    background-image: linear-gradient(0deg,rgba(220,229,235,1) 0%, rgba(100,178,210,1) 59%);
-    height:20vh;
+
+    background-image: linear-gradient(0deg, rgba(220, 229, 235, 1) 0%, rgba(100, 178, 210, 1) 59%);
+    height: 20vh;
     background-repeat: no-repeat;
     background-size: cover;
-    }
 
-.menu{
+}
+
+header a {
+    transition: text-shadow 0.3 ease;
+
+}
+
+.menu {
     text-decoration: none;
     color: rgb(255, 255, 255);
     margin-left: 1vw;
     margin-right: 1vw;
     font-size: 3vh;
 
+
 }
+
 /*decoracion para que menu se colore al pasar el cursor*/
 
-.menu:hover{
+.menu:hover {
     color: rgba(0, 9, 17, 0.829);
     margin-left: 1.8vw;
-    margin-right: 1,8vw;
+    margin-right: 1, 8vw;
     text-shadow: 0px 0px 25px rgba(201, 206, 211, 0.829);
 }
+
 /* decoracion para que quede marcado el html que se esta usando*/
 
-.menu[href="#"]{
+.menu[href="#"] {
     color: rgba(0, 9, 17, 0.829);
     margin-left: 1vw;
     margin-right: 1vw;
@@ -76,11 +95,12 @@ header{
 
 @media screen and (max-width:600px) {
 
-    header{
-        height: 32vh ;
-        
+    header {
+        height: 32vh;
+
     }
-    .menu{
+
+    .menu {
         margin-bottom: 1vh;
         display: flex;
         flex-direction: column;
@@ -88,7 +108,8 @@ header{
         text-align: center;
         font-size: 5vw;
     }
-    .logo{
+
+    .logo {
         margin-bottom: 15vh;
         width: 13vw;
     }
