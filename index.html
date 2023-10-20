@@ -4,11 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ::: Favicon ::: -->
     <link rel="shortcut icon" href="img/messi_icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/navbar.css">
+<!-- ::: API de Google para las fonts de Kamala sin descargar ::: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- ::: Linkeamos las hojas de estilos de CSS ::: -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
+<!-- ::: Titulo del Index ::: -->
     <title>Fanpage Messi </title>
+<!-- ::: Linkeamos FontAwesome para los iconos del Footer ::: -->
     <script src="https://kit.fontawesome.com/ef289831a8.js" crossorigin="anonymous"></script>
 </head>
 
@@ -41,25 +49,44 @@
     </div>
     <main>
 <!-- ::: iFrame de Spotify ::: -->
-        <div class="spotify">
-            <iframe id="spoti" style="border-radius:12px" src="https://open.spotify.com/embed/track/79d6fVzRM6DRYxR302AJFY?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>    
-        </div>
+        <section>
+            <div>
+                <p id="intro_spotify">¡Mientras navegas por la pagina alenta con nosotros con este temazo!</p>
+            </div>
+            <div class="spotify">
+                <iframe id="spoti" style="border-radius:12px" src="https://open.spotify.com/embed/track/79d6fVzRM6DRYxR302AJFY?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>    
+            </div>
 <!-- ::: Intro ::: -->
-        <div class="topmain">
-            <h2>Lionel Andrés Messi Cuccittini,
-                conocido como Leo Messi, es un futbolista argentino, nacido en la ciudad de Rosario el 24 de junio de
-                1987. Se desempeña como delantero o
-                centrocampista. Desde 2023, integra el plantel del Inter Miami de la MLS estadounidense.
-                Es también internacional con la selección de Argentina, de la que es capitán.</h2>
+            <div class="topmain">
+                <h2><span class="name_bold">Lionel Andrés Messi Cuccittini</span>,
+                    conocido como <span class="name_bold">Leo Messi</span>, es un futbolista argentino, nacido en la ciudad de Rosario el 24 de junio de
+                    1987. Se desempeña como delantero o
+                    centrocampista.<br>
+                    Desde 2023, integra el plantel del Inter Miami de la MLS estadounidense. <br>
+                    Es también internacional con la selección de Argentina, de la que es capitán.</h2>
+            </div>
+<!-- ::: iFrame de YouTube ::: -->
+            <p id="intro_yt">"Este soy yo, Leo Messi"</p>
+            <div class="iframe_yt">
+                <iframe width="640" height="380" src="https://www.youtube.com/embed/z56t-SUuUdk?si=b3pyWRiIBYwHKGwH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
 <!-- ::: iFrame de YouTube Short ::: -->
             <p id="intro_short">Gran jugada de Leo en el Mundial Qatar 2022 que termina en gol</p>
-            <iframe width="452" height="804" src="https://www.youtube.com/embed/XdPGNFpNrRg"
-                title="La GRAN JUGADA de MESSI para el 3-0 | Argentina vs. Croacia" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <a href="templates/galeria.html" target="_blank">Ver más jugadas del <b><i>Mesías</i></b></a>
-        </div>
-
+            <div class="iframe_short">
+                <iframe width="452" height="804" src="https://www.youtube.com/embed/XdPGNFpNrRg"
+                    title="La GRAN JUGADA de MESSI para el 3-0 | Argentina vs. Croacia" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+<!-- ::: Link de YouTube con video de goles ::: -->
+            <div class="mas_jugadas">
+                <a class="ver_mas" href="https://www.youtube.com/watch?v=xANg69ozN98" target="_blank">Ver más jugadas del <span class="name_bold">Mesías</span></a>
+            </div>
+<!-- ::: Sumate al Club ::: -->
+            <div class="mas_jugadas">
+                <a class="sumate" href="/templates/suscripcion.html" target="_blank">¡Sumate al club, no te quedes afuera!</a>
+            </div>
+        </section>      
     </main>
 <!-- ::: FOOTER ::: -->
     <footer>
