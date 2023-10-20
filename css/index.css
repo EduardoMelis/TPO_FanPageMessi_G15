@@ -1,9 +1,9 @@
-* {
+*{
 	margin: 0%;
 	/*Elimina todo margen que trae por defecto*/
 	padding: 0%;
 	/*Elimina todo relleno que trae por defecto*/
-
+	
 }
 
 /* Hero */
@@ -67,34 +67,108 @@
 /* iFrame de Spotify */
 .spotify{
     display: flex;
+	flex-wrap: wrap;
+	gap: 5vw;
     justify-content: center;
-    align-items: center;
 }
 
 #spoti{
-    width: 30vw;
+	width: 30vw;
     height: 8vw;
     box-shadow: 0.5vw 0.5vw 0.5vw 0.5vw rgba(38, 41, 43, 0.8);
-
+	
 }
+
+#intro_spotify{
+	display: flex;
+	justify-content: center;
+	margin-top: 2vh;
+}
+
+/* Estilos de fuentes para el contenido del main */
+h2{
+	font-family: 'Kalam';
+	font-weight: 400;
+	font-size: 2vw;
+	margin-top: 5vw;
+	text-align: center;
+}
+
+.name_bold{
+	font-family: 'Kalam';
+	font-weight: 700;
+	font-size: 2.5vw;
+}
+
+p{
+	font-family: 'Kalam';
+	font-weight: 400;
+	font-size: 1.5vw;
+	text-align: center;
+}
+
+.mas_jugadas{	
+	text-align: center;
+	margin-top: 2vw;
+	margin-bottom: 5vw;
+}
+
+.ver_mas{
+	font-family: 'Kalam';
+	font-weight: 400;
+	font-size: 1.5vw;
+}
+
 /* Estilos Intro */
 .topmain {
-	display: inline-table;
+	display: flex;
+	gap: 5vw;
+	flex-wrap: wrap;
+	justify-content: center;
 	align-content: center;
+	align-items: center;
 }
 
-h2 {
-	margin-top: 2vw;
+/* iFrame de YouTube */
+.iframe_yt{
+    display: flex;
+	flex-wrap: wrap;
+	gap: 5vw;
+    justify-content: center;
+	background-color: #fff;
+}
+
+#intro_yt{
+	display: flex;
+	margin-top: 5vw;
+	justify-content: center;
+	background-color: #fff;
+}
+
+/* iFrame Short de YouTube */
+.iframe_short{
+    display: flex;
+	flex-wrap: wrap;
+	gap: 5vw;
+    justify-content: center;
 }
 
 #intro_short {
-	margin-top: 2vw;
+	display: flex;
+	margin-top: 5vw;
+	justify-content: center;
+}
+
+.sumate{
+	font-family: 'Kalam';
+	font-weight: 700;
+	font-size: 2vw;
 }
 
 /*se puso un fondo al main*/
 main {
 	display: flex;
 	justify-content: center;
-	background-color: #b5e2fa86;
+	background-color: rgba(100, 179, 210, 0.7);
 
 }
