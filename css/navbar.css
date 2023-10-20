@@ -45,7 +45,11 @@ color sombra: rgba(83,175,236,0.8) */
     /*Agrega sombra alrededor*/
 }
 
-
+.logo:hover{
+    filter: invert();
+    color: rgba(255, 255, 255, 0.829);
+    box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw rgba(255, 255, 255, 0.829);
+}
 
 header {
 

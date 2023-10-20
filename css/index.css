@@ -55,17 +55,29 @@
 	margin: 30px 0 30px;
 	position: absolute;
 	bottom: 100px;
-	color: rgba(255, 255, 255, 0.7)
+	color: rgb(255, 255, 255)
 }
 
 .contenedor .wrap .box .title1 {
 	font-size: 3.5vw;
 	line-height: 1;
-	/* text-align: left; */
 	position: absolute;
 	font-weight: 700;
 }
+/* iFrame de Spotify */
+.spotify{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#spoti{
+    width: 30vw;
+    height: 8vw;
+    box-shadow: 0.5vw 0.5vw 0.5vw 0.5vw rgba(38, 41, 43, 0.8);
+
+}
+/* Estilos Intro */
 .topmain {
 	display: inline-table;
 	align-content: center;

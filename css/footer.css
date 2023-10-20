@@ -12,6 +12,7 @@ footer {
 
 }
 
+/* Estilos para el logo */
 .logo_div_foot {
     display: flex;
     justify-content: center;
@@ -32,6 +33,13 @@ footer {
     /*Agrega sombra alrededor*/
 }
 
+.logo_footer:hover{
+    filter: invert();
+    color: rgba(255, 255, 255, 0.829);
+    box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw rgba(255, 255, 255, 0.829);
+}
+
+/* Derechos de autor */
 .copyright {
     display: flex;
     justify-content: center;
@@ -40,6 +48,7 @@ footer {
     font-size: 0.8rem;
 }
 
+/* Estilos para los iconos de Redes */
 .redes_sociales {
     display: flex;
     justify-content: center;
