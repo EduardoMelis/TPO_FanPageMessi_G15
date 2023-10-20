@@ -4,14 +4,16 @@
 }
 
 body{
-    /* background: rgb(71,109,219); */
+   
     background: linear-gradient(90deg, rgba(82,153,228,1) 0%, rgba(106,190,227,1) 49%, rgba(155,194,241,1) 85%);
+    
 }
 
 h1{
     padding: 0.5vw;
     text-align: center;
 }
+
 
 .copas{
         display: inline-block;
@@ -34,12 +36,81 @@ p{
     margin: 2vw 6vw 4vw 6vw;
     height: 15vh;
     transition: transform 0.8s ease-in-out;
+    
    
 }
 .img:hover{
-    transform: scale(1.25)
+    transform: scale(1.50)
 }
 .nro{
     font-size: 5vw;
     color: blue;
+}
+/*animacion barcelona*/
+.animacion{
+    position: relative;
+    background-repeat: no-repeat;
+    background-image:  url("https://static.messi.com/wp-content/uploads/2020/03/messi.png");
+    animation: messibar 12s linear infinite ;
+    background-size: 25vh;
+    width: 100vw;
+    height: 50vh;
+    margin: 5vh 5vw 5vh 5vw;
+
+}
+@keyframes messibar{
+    
+    from{background-position: 50vw 0;}
+    to {background-position: 0vw 0;}
+    
+}
+.animacion2{
+    position: relative;
+    background-repeat: no-repeat;
+    background-image:  url("https://static.messi.com/wp-content/uploads/2021/09/Messi-silueta-1.png");
+    animation: messibar2 12s linear infinite ;
+    background-size: 35vh;
+    width: 100vw;
+    height: 40vh;
+    margin: 5vh 5vw 5vh 5vw;
+
+}
+@keyframes messibar2{
+    
+    from{background-position: 0vw 0;}
+    to {background-position: 50vw 0;}
+}
+
+.animacion3{
+    position: relative;
+    background-repeat: no-repeat;
+    background-image:  url("https://static.messi.com/wp-content/uploads/2023/07/Messi-INTER-silueta.png");
+    animation: messibar3 12s linear infinite ;
+    background-size: 35vh;
+    width: 100vw;
+    height: 40vh;
+    margin: 5vh 5vw 5vh 5vw;
+
+}
+@keyframes messibar3{
+    
+    from{background-position: 50vw 0;}
+    to {background-position: 0vw 0;}
+}
+
+.animacion4{
+    position: relative;
+    background-repeat: no-repeat;
+    background-image:  url("https://static.messi.com/wp-content/uploads/2020/03/messi-argentian-silhouette.png");
+    animation: messibar4 12s linear infinite ;
+    background-size: 35vh;
+    width: 100vw;
+    height: 40vh;
+    margin: 5vh 5vw 5vh 5vw;
+
+}
+@keyframes messibar4{
+    
+    from{background-position: 50vw 0;}
+    to {background-position: 0vw 0;}
 }
