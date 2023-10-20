@@ -1,0 +1,66 @@
+/* estilos parrafos se establece la fuente la sangria y el tamaño en el contenedor*/
+p {
+    font-family: "kalam";
+    width: 60%;
+    padding: 3rem;
+    text-indent: 10px
+}
+
+/* estilos articulo en la seccion barcelona se establece fondo y posicionamientos */
+.barcelona article {
+    background-color: rgba(240, 240, 240, 0.5);
+    display: flex;
+    justify-content: row;
+    flex-direction: space-between;
+    align-items: center;
+}
+
+/* estilos articulo en la seccion paris se establece fondo y posicionamientos */
+.paris article {
+    background-image: linear-gradient(180deg, rgba(220, 229, 235, 1) 0%, rgba(131, 209, 240) 59%);
+    display: flex;
+    justify-content: row;
+    flex-direction: space-between;
+    align-items: center;
+}
+
+/* estilos articulo en la seccion miami se establece fondo y posicionamientos */
+
+.miami article {
+    display: flex;
+    justify-content: row;
+    flex-direction: space-between;
+    align-items: center;
+    background-color: rgba(131, 209, 240, 1);
+}
+
+/* estilos articulo en la seccion seleccion se establece fondo y posicionamientos */
+.seleccion article {
+    background-image: linear-gradient(0deg, rgba(220, 229, 235, 1) 0%, rgb(131, 209, 240) 59%);
+    display: flex;
+    justify-content: row;
+    flex-direction: space-between;
+    align-items: center;
+}
+
+/* estilos a imagenes, se establece eñ borde y el tamaño asi como una sombra */
+section article img {
+    border-radius: 5px;
+    margin: 3rem;
+    width: 50vh;
+    transition: transform 0.3s ease;
+    box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw rgba(38, 41, 43, 0.8);
+}
+
+/* animacion sobre las imagenes cuando esta el cursor */
+section article img:hover {
+    transform: scale(1.25) translateX(1.5vw);
+}
+
+/* query para pantallas menos a 700px */
+@media (max-width:700px) {
+    section article {
+        flex-direction: column;
+    }
+
+}
