@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    /* background: rgb(71,109,219); */
+    background: linear-gradient(90deg, rgba(82,153,228,1) 0%, rgba(106,190,227,1) 49%, rgba(155,194,241,1) 85%);
+}
+
+h1{
+    padding: 0.5vw;
+    text-align: center;
+}
+
+.copas{
+        display: inline-block;
+        
+   
+
+}
+.barcelona , .psg , .i-miami , .arg{
+    margin: 2vw;
+    display: flex;
+    gap: 5vw;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+p{
+    text-align: center;
+}
+.img{
+    margin: 2vw 6vw 4vw 6vw;
+    height: 15vh;
+    transition: transform 0.8s ease-in-out;
+   
+}
+.img:hover{
+    transform: scale(1.25)
+}
+.nro{
+    font-size: 5vw;
+    color: blue;
+}
