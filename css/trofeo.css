@@ -53,7 +53,7 @@ p{
     background-image:  url("https://static.messi.com/wp-content/uploads/2020/03/messi.png");
     animation: messibar 12s linear infinite ;
     background-size: 25vh;
-    width: 100vw;
+    width: 90vw;
     height: 50vh;
     margin: 5vh 5vw 5vh 5vw;
 
@@ -70,7 +70,7 @@ p{
     background-image:  url("https://static.messi.com/wp-content/uploads/2021/09/Messi-silueta-1.png");
     animation: messibar2 12s linear infinite ;
     background-size: 35vh;
-    width: 100vw;
+    width: 90vw;
     height: 40vh;
     margin: 5vh 5vw 5vh 5vw;
 
@@ -87,7 +87,7 @@ p{
     background-image:  url("https://static.messi.com/wp-content/uploads/2023/07/Messi-INTER-silueta.png");
     animation: messibar3 12s linear infinite ;
     background-size: 35vh;
-    width: 100vw;
+    width: 90vw;
     height: 40vh;
     margin: 5vh 5vw 5vh 5vw;
 
@@ -104,7 +104,7 @@ p{
     background-image:  url("https://static.messi.com/wp-content/uploads/2020/03/messi-argentian-silhouette.png");
     animation: messibar4 12s linear infinite ;
     background-size: 35vh;
-    width: 100vw;
+    width: 90vw;
     height: 40vh;
     margin: 5vh 5vw 5vh 5vw;
 
