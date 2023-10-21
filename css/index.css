@@ -3,7 +3,10 @@
 	/*Elimina todo margen que trae por defecto*/
 	padding: 0%;
 	/*Elimina todo relleno que trae por defecto*/
-	
+}
+
+body{
+    background: linear-gradient(90deg, rgba(82,153,228,1) 0%, rgba(106,190,227,1) 49%, rgba(155,194,241,1) 85%);
 }
 
 /* Hero */
@@ -135,14 +138,12 @@ p{
 	flex-wrap: wrap;
 	gap: 5vw;
     justify-content: center;
-	background-color: #fff;
 }
 
 #intro_yt{
 	display: flex;
 	margin-top: 5vw;
 	justify-content: center;
-	background-color: #fff;
 }
 
 /* iFrame Short de YouTube */
@@ -169,6 +170,4 @@ p{
 main {
 	display: flex;
 	justify-content: center;
-	background-color: rgba(100, 179, 210, 0.7);
-
 }
