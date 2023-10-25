@@ -16,12 +16,10 @@ h1{
 
 
 .copas{
-        display: inline-block;
-        
-   
-
+    display: inline-block;
 }
-.barcelona , .psg , .i-miami , .arg{
+
+.barcelona , .psg , .I-miami , .arg{
     margin: 2vw;
     display: flex;
     gap: 5vw;
@@ -29,9 +27,17 @@ h1{
     justify-content: center;
 
 }
+
 p{
     text-align: center;
 }
+
+.cup_title{
+    font-family: "Kalam";
+    font-weight: 700;
+    font-size: x-large;
+}
+
 .img{
     margin: 2vw 6vw 4vw 6vw;
     height: 15vh;
