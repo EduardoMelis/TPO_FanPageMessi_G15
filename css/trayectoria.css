@@ -1,49 +1,63 @@
 /* estilos parrafos se establece la fuente la sangria y el tamaño en el contenedor*/
 p {
     font-family: "kalam";
+    font-size: x-large;
     width: 60%;
     padding: 3rem;
     text-indent: 10px
 }
 
-/* estilos articulo en la seccion barcelona se establece fondo y posicionamientos */
+/* Fondos de las secciones */
+.barcelona{
+    background: linear-gradient(white,rgb(165, 0, 68, 0.6),white, rgba(0, 76, 152, 0.6),white, rgb(165, 0, 68, 0.6), white);
+}
+
+.paris{
+    background: linear-gradient(white, rgb(1, 66, 106, 0.6), white);
+}
+
+.miami{
+    background: linear-gradient(white, rgb(246 180 205), white);
+}
+
+.seleccion{
+    background: linear-gradient(white, rgb(108, 172, 228),white,rgb(108, 172, 228), white);
+}
+
+/* estilos articulo en la seccion barcelona se establece posicionamientos */
 .barcelona article {
-    background-color: rgba(240, 240, 240, 0.5);
     display: flex;
     justify-content: row;
     flex-direction: space-between;
     align-items: center;
 }
 
-/* estilos articulo en la seccion paris se establece fondo y posicionamientos */
+/* estilos articulo en la seccion paris se establece posicionamientos */
 .paris article {
-    background-image: linear-gradient(180deg, rgba(220, 229, 235, 1) 0%, rgba(131, 209, 240) 59%);
     display: flex;
     justify-content: row;
     flex-direction: space-between;
     align-items: center;
 }
 
-/* estilos articulo en la seccion miami se establece fondo y posicionamientos */
+/* estilos articulo en la seccion miami se establece posicionamientos */
 
 .miami article {
     display: flex;
     justify-content: row;
     flex-direction: space-between;
     align-items: center;
-    background-color: rgba(131, 209, 240, 1);
 }
 
-/* estilos articulo en la seccion seleccion se establece fondo y posicionamientos */
+/* estilos articulo en la seccion seleccion se establece posicionamientos */
 .seleccion article {
-    background-image: linear-gradient(0deg, rgba(220, 229, 235, 1) 0%, rgb(131, 209, 240) 59%);
     display: flex;
     justify-content: row;
     flex-direction: space-between;
     align-items: center;
 }
 
-/* estilos a imagenes, se establece eñ borde y el tamaño asi como una sombra */
+/* estilos a imagenes, se establece el borde y el tamaño asi como una sombra */
 section article img {
     border-radius: 5px;
     margin: 3rem;
