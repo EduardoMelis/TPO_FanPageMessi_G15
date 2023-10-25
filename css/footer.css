@@ -41,6 +41,7 @@ footer {
 
 /* Derechos de autor */
 .copyright {
+    font-family: "Messina";
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,4 +66,19 @@ footer {
     color: black;
     transform: scale(1.2) translateX(0.2rem);
     transition: 0.3s;
+}
+
+/* Media querie para responsive en Tablets */
+@media (min-width: 426px) and (max-width:768px) {
+    .logo_footer{
+        width: 100px;
+    }
+}
+
+/* Media querie para responsive en Celulares */
+@media (max-width: 425px) {
+    .logo_footer{
+        width: 75px;
+
+    }
 }
