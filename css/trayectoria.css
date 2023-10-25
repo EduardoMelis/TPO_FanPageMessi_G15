@@ -64,3 +64,31 @@ section article img:hover {
     }
 
 }
+
+
+#apiclima {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 10vh;
+    background-color: rgba(240, 240, 240, 0.5);
+
+
+}
+
+.clima article {
+    font-family: "kalam";
+    font-size: x-small;
+}
+
+.clima {
+    display: flex;
+    flex-direction: column;
+    font-family: "kalam";
+    font-size: x-small;
+    padding: 0.5rem 0.5rem;
+    align-items: center;
+    margin: 0.5rem;
+
+
+
+}
