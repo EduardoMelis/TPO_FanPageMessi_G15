@@ -47,15 +47,20 @@
   .form-control label {
     display: inline-block;
     margin-bottom: 5px;
+    font-family: "Kalam";
+    font-weight: 700;
+    font-size: 22px;
   }
   
   .form-control input {
     border: 2px solid #f0f0f0;
     display: block;
     border-radius: 10px;
-    font-size: 14px;
     width: 100%;
     padding: 10px;
+    font-family: "Kalam";
+    font-weight: 400;
+    font-size: large;
   }
   
   .form-control i {
