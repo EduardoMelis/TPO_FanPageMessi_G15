@@ -21,7 +21,7 @@ const funciondelclima = data => {
         location: data.name,
         descrip: data.weather[0].main,
         humedad: data.main.humidity + "%",
-        temp: data.main.temp + " C°",
+        temp: Math.trunc(data.main.temp) + " C°",
         date: getDate(),
 
     }
@@ -35,7 +35,7 @@ const funciondelclima = data => {
 // se crea la funcion getDate para poder volcar la fecha em infoclima
 const getDate = () => {
     let date = new Date();
-    return `${date.getDate()}-${date.getMonth()}-${date.getFullYear()}`;
+    return `${date.getDate()}-${("0" + (date.getMonth() + 1)).slice(-2)}-${date.getFullYear()}`;
 }
 
 
