@@ -8,20 +8,20 @@ p {
 }
 
 /* Fondos de las secciones */
-.barcelona{
-    background: linear-gradient(white,rgb(165, 0, 68, 0.6),white, rgba(0, 76, 152, 0.6),white, rgb(165, 0, 68, 0.6), white);
+.barcelona {
+    background: linear-gradient(white, rgb(165, 0, 68, 0.6), white, rgba(0, 76, 152, 0.6), white, rgb(165, 0, 68, 0.6), white);
 }
 
-.paris{
+.paris {
     background: linear-gradient(white, rgb(1, 66, 106, 0.6), white);
 }
 
-.miami{
+.miami {
     background: linear-gradient(white, rgb(246 180 205), white);
 }
 
-.seleccion{
-    background: linear-gradient(white, rgb(108, 172, 228),white,rgb(108, 172, 228), white);
+.seleccion {
+    background: linear-gradient(white, rgb(108, 172, 228), white, rgb(108, 172, 228), white);
 }
 
 /* estilos articulo en la seccion barcelona se establece posicionamientos */
@@ -71,38 +71,10 @@ section article img:hover {
     transform: scale(1.25) translateX(1.5vw);
 }
 
-/* query para pantallas menos a 700px */
-@media (max-width:700px) {
+/* query para pantallas menos a 768px */
+@media (max-width: 768px) {
     section article {
         flex-direction: column;
     }
-
-}
-
-
-#apiclima {
-    display: flex;
-    flex-direction: row-reverse;
-    height: 10vh;
-    background-color: rgba(240, 240, 240, 0.5);
-
-
-}
-
-.clima article {
-    font-family: "kalam";
-    font-size: x-small;
-}
-
-.clima {
-    display: flex;
-    flex-direction: column;
-    font-family: "kalam";
-    font-size: x-small;
-    padding: 0.5rem 0.5rem;
-    align-items: center;
-    margin: 0.5rem;
-
-
 
 }

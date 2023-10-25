@@ -13,7 +13,7 @@ body{
 .contenedor {
 	display: flex;
 	max-width: 100%;
-	height: 50vh;
+	height: 700px;
 	background-image: url(../img/messi\ espalda.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -33,22 +33,17 @@ body{
 
 .contenedor .wrap .box {
 	flex-basis: 50%;
-	color: #fff;
 	text-align: left;
 	align-self: flex-start;
 }
 
 .contenedor .wrap .box span {
-	font-size: 2vw;
 	letter-spacing: 2px;
-	font-weight: 300;
-	padding-bottom: 100px;
-
+	padding-bottom: 300px;
 }
 
 .contenedor .wrap .box h1 {
 	font-size: 100px;
-	line-height: .2;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -62,11 +57,12 @@ body{
 }
 
 .contenedor .wrap .box .title1 {
-	font-size: 3.5vw;
+	font-size: 70px;
 	line-height: 1;
 	position: absolute;
 	font-weight: 700;
 }
+
 /* iFrame de Spotify */
 .spotify{
     display: flex;
@@ -76,8 +72,8 @@ body{
 }
 
 #spoti{
-	width: 30vw;
-    height: 8vw;
+	width: 35vw;
+    height: 152px;
     box-shadow: 0.5vw 0.5vw 0.5vw 0.5vw rgba(38, 41, 43, 0.8);
 	
 }
@@ -86,13 +82,15 @@ body{
 	display: flex;
 	justify-content: center;
 	margin-top: 2vh;
+	font-size: xx-large;
+	padding: 0 10% 0 10%;
 }
 
 /* Estilos de fuentes para el contenido del main */
 h2{
 	font-family: 'Kalam';
 	font-weight: 400;
-	font-size: 2vw;
+	font-size: xx-large;
 	margin-top: 5vw;
 	text-align: center;
 }
@@ -100,13 +98,12 @@ h2{
 .name_bold{
 	font-family: 'Kalam';
 	font-weight: 700;
-	font-size: 2.5vw;
 }
 
 p{
 	font-family: 'Kalam';
 	font-weight: 400;
-	font-size: 1.5vw;
+	font-size: xx-large;
 	text-align: center;
 }
 
@@ -119,7 +116,13 @@ p{
 .ver_mas{
 	font-family: 'Kalam';
 	font-weight: 400;
-	font-size: 1.5vw;
+	font-size: xx-large;
+}
+
+.sumate{
+	font-family: 'Kalam';
+	font-weight: 700;
+	font-size: xx-large;
 }
 
 /* Estilos Intro */
@@ -130,44 +133,171 @@ p{
 	justify-content: center;
 	align-content: center;
 	align-items: center;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
-/* iFrame de YouTube */
-.iframe_yt{
+/* iFrame de YouTube y Short */
+#intro_yt, #intro_short{
+	display: flex;
+	margin-top: 5vw;
+	justify-content: center;
+}
+
+.iframe_yt, .iframe_short{
     display: flex;
 	flex-wrap: wrap;
 	gap: 5vw;
     justify-content: center;
 }
 
-#intro_yt{
-	display: flex;
-	margin-top: 5vw;
-	justify-content: center;
+#yt_vid{
+	width: 640px;
+	height: 380px;
 }
 
-/* iFrame Short de YouTube */
-.iframe_short{
+#yt_short{
+	width: 445px;
+	height: 791px;
+}
+
+/* Estilos para la API del Clima */
+#intro_clima{
+	display: flex;
+	justify-content: center;
+	margin-top: 2vh;
+	font-size: xx-large;
+}
+
+.clima_container{
     display: flex;
-	flex-wrap: wrap;
-	gap: 5vw;
-    justify-content: center;
-}
-
-#intro_short {
-	display: flex;
-	margin-top: 5vw;
 	justify-content: center;
+    flex-direction: row-reverse;
+	margin: auto;
+	width: 35vw;
+    height: 12vh;
+    background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 20px 20px 20px 20px ;	
 }
 
-.sumate{
-	font-family: 'Kalam';
-	font-weight: 700;
-	font-size: 2vw;
+.clima article {
+    font-family: "Kalam";
+	font-weight: 300;
+    font-size: large;
 }
 
-/*se puso un fondo al main*/
-main {
-	display: flex;
-	justify-content: center;
+.clima {
+    display: flex;
+    flex-direction: column;
+    font-family: "kalam";
+	font-weight: 400;
+    font-size: x-large;
+    padding: 0.5rem 0.5rem;
+    align-items: center;
+}
+
+/* Media querie para responsive en Tablets */
+@media (min-width: 426px) and (max-width:768px) {
+	.contenedor .wrap .box .title1 {
+		font-size: 45px;
+	}
+	.topmain {
+		padding-top: 3vh;
+		padding-bottom: 2vh;
+	}
+	.contenedor{
+		background-attachment: local;
+	}
+	#spoti{
+		width: 352px;
+		height: 152px;		
+	}
+	#yt_vid{
+		margin: 0rem 5rem;
+		width: 50vh;
+		height: 35vh;
+		padding-bottom: 2vh;
+	}
+	#yt_short{
+		margin: 0rem 5rem;
+		width: 43vh;
+		height: 75vh;	
+		padding-bottom: 2vh;	
+	}
+	.clima_container{
+		justify-content: space-around;
+		width: 450px;
+	}
+	.clima{
+		font-size: medium;
+	}
+	.clima article{
+		font-size: small;
+	}
+	#intro_clima{
+		font-size: x-large;
+	}
+	#intro_spotify{
+		font-size: large;
+	}
+	.sumate, .ver_mas{
+		font-size: x-large;
+	}
+	h2, p{
+		font-size: x-large;
+	}
+}
+
+/* Media querie para Responsive en Celulares */
+@media (max-width: 425px) {
+	.contenedor .wrap .box .title1 {
+		font-size: 35px;
+	}
+	.contenedor{
+		background-attachment: local;
+	}
+	.topmain {
+		padding-top: 3vh;
+		padding-bottom: 2vh;
+	}
+	#spoti{
+		width: 352px;
+		height: 152px;		
+	}	
+	#yt_vid{
+		margin: 0rem 5rem;
+		width: 50vh;
+		height: 35vh;
+		padding-bottom: 2vh;
+	}
+	#yt_short{
+		margin: 0rem 5rem;
+		width: 43vh;
+		height: 75vh;	
+		padding-bottom: 2vh;	
+	}
+	.clima_container{
+		justify-content: space-around;
+		width: 350px;
+		height: 150px;
+		flex-wrap: wrap;
+	}
+	.clima{
+		font-size: medium;
+	}
+	.clima article{
+		font-size: small;
+	}
+	#intro_clima{
+		font-size: x-large;
+	}
+	#intro_spotify{
+		font-size: large;
+	}
+	.sumate, .ver_mas{
+		font-size: large;
+	}
+	h2, p{
+		font-size: large;
+	}
 }
