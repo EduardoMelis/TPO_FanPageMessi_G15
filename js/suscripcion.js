@@ -3,6 +3,9 @@ const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const passwordConfirmation = document.getElementById("password-confirmation");
+const abrirventana = document.getElementById("modal-ventana");
+const cerrarventana = document.getElementById("boton-cerrar");
+
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -23,7 +26,7 @@ function checkInputs() {
   }
 
   if (emailValue === "") {
-    setErrorFor(email, "Completel campo del email");
+    setErrorFor(email, "Complete el campo del email");
   } else if (!checkEmail(emailValue)) {
     setErrorFor(email, "Email invalido");
   } else {
@@ -32,7 +35,7 @@ function checkInputs() {
 
   if (passwordValue === "") {
     setErrorFor(password, "Ingrese el campo para su contraseña");
-  } else if (passwordValue.length < 7) {
+  } else if (passwordValue.length < 3) {
     setErrorFor(password, "Debe contener al menos 7 caracteres");
   } else {
     setSuccessFor(password);
@@ -53,10 +56,24 @@ function checkInputs() {
   });
 
   if (formIsValid) {
-    console.log("Formulario completo!");
+    abrirventana.click();
+    // cuando el formulario es valido y se da click a enviar se dispara el evento click y abre el modal 
+
+
   }
+  cerrarventana.addEventListener("click", () => {
+    window.location.href = "../templates/suscripcion.html"
+    // este evento esta esperando que se le de click a cerrar el modal para recargar la pagina
+
+
+  })
+
 }
-  // asigna mensaje de errro
+
+
+
+
+// asigna mensaje de errro
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
   const small = formControl.querySelector("small");
@@ -64,10 +81,10 @@ function setErrorFor(input, message) {
 
   formControl.className = "form-control error";
 }
-  //asigna datos correctos  
+//asigna datos correctos  
 function setSuccessFor(input) {
   const formControl = input.parentElement;
-  
+
   formControl.className = "form-control success";
 }
 //funcion para validar la foma del email
@@ -84,10 +101,10 @@ function checkEmail(email) {
 const ulSquares = document.querySelector("ul.squares")
 
 
-for (let i = 0; i < 15; i++) { 
+for (let i = 0; i < 15; i++) {
   const li = document.createElement("li")
 
-  const random = (min, max) => Math.random() * (max - min) + min 
+  const random = (min, max) => Math.random() * (max - min) + min
   const size = Math.floor(random(10, 120))
   const position = random(1, 99)
   const delay = random(5, 0.1)
@@ -103,6 +120,6 @@ for (let i = 0; i < 15; i++) {
   li.style.animationDelay = `${delay}s`//definiendo un delay 
   li.style.animationDuration = `${duration}s`//definiendo duracion 
   li.style.animationTimingFunction = `cubic-bezier(${Math.random()}, ${Math.random()}, ${Math.random()}, ${Math.random()})`
-  
+
   ulSquares.appendChild(li)
 }

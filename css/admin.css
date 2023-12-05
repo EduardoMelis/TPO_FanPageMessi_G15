@@ -1,0 +1,22 @@
+.formContainer {
+    width: 40vw;
+    border: solid 1px;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    height: 70vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.form-select {
+    padding: 3px;
+    margin-bottom: 1rem;
+}
+
+.col-12 {
+    margin: 1rem;
+}

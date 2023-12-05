@@ -2,108 +2,146 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/messi_icon.ico" type="image/x-icon">
-<!-- ::: API de Google para las fonts de Kamala sin descargar ::: -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/suscripcion.css">
-    
-    <title>Suscripcion</title>
-    <link rel="stylesheet" href="../css/footer.css">
-    <script src="https://kit.fontawesome.com/ef289831a8.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/messi_icon.ico" type="image/x-icon">
+  <!-- ::: API de Google para las fonts de Kamala sin descargar ::: -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/suscripcion.css">
+
+  <title>Registrate</title>
+  <link rel="stylesheet" href="../css/footer.css">
+  <script src="https://kit.fontawesome.com/ef289831a8.js" crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <div class="topnav">
-            <a href="../index.html"><img class="logo" src="../img/messi_logo.png" alt="Inicio"></a>
-        </div>
-        <nav class="topnav" id="navv">
-            <a class="menu" href="../index.html">Inicio</a>
-            <a class="menu" href="galeria.html">Galeria</a>
-            <a class="menu" href="trayectoria.html">Trayectoria</a>
-            <a class="menu" href="trofeos.html">Trofeos</a>
-            <a class="menu" href="#">Suscribete</a>
-        </nav>
-    </header>
-    
-      <main>
+  <header>
+    <div class="topnav">
+      <a href="../index.html"><img class="logo" src="../img/messi_logo.png" alt="Inicio"></a>
+    </div>
+    <nav class="topnav" id="navv">
+      <a class="menu" href="../index.html">Inicio</a>
+      <a class="menu" href="galeria.html">Galeria</a>
+      <a class="menu" href="trayectoria.html">Trayectoria</a>
+      <a class="menu" href="trofeos.html">Trofeos</a>
+      <a class="menu" href="#">Registrate</a>
+    </nav>
+  </header>
 
-        <div class="container">
+  <main>
 
-          <div class="header">
-            <h2> Formulario </h2>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+      id="modal-ventana">
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Registrado</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          
-          <form id="form" class="form">
-
-            <div class="form-control">
-              <label for="username">Nombre</label>
-              <input type="text" id="username" placeholder="Ingrese su Nombre..."/>
-              <i class="fas fa-exclamation-circle"></i>
-              <i class="fas fa-check-circle"></i>
-              <small>Mensaje de error</small>
-            </div>
-          
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input type="text" id="email" placeholder="Ingrese su Email..." />
-              <i class="fas fa-exclamation-circle"></i>
-              <i class="fas fa-check-circle"></i>
-              <small>Mensaje de error</small>
-            </div>
-          
-            <div class="form-control">
-              <label for="password">Contraseña</label>
-              <input type="password"id="password" placeholder="Ingrese una contraseña..."/>
-              <i class="fas fa-exclamation-circle"></i>
-              <i class="fas fa-check-circle"></i>
-              <small>Mensaje de error</small>
-            </div>
-          
-            <div class="form-control">
-              <label for="password-confirmation">Confirmación de Contraseña</label>
-              <input type="password" id="password-confirmation" placeholder="Confirme Contraseña..." />
-              <i class="fas fa-exclamation-circle"></i>
-              <i class="fas fa-check-circle"></i>
-              <small>Mensaje de error</small>
-            </div>
-
-
-            <button type="submit" class="btn-login">Enviar</button>
-
-          </form>
-
+          <div class="modal-body">
+            <h3>Bienvenido, te has registrado con exito.</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="boton-cerrar">Cerrar</button>
+            <!-- <button type="button" class="btn btn-primary" >Aceptar</button> -->
+          </div>
         </div>
-    
-        <!--<ul class="star"></ul> -->  
-        <ul class="squares"></ul>   
-
-        <script src="https://kit.fontawesome.com/f9e19193d6.js"crossorigin="anonymous"></script>
-        <script src="/js/suscripcion.js"></script>
+      </div>
+    </div>
 
 
-      </main>
-      <footer>
-        <div class="redes_sociales">
-            <a href="https://www.instagram.com/leomessi/" class="icon_redes" target="_blank" title="Instagram/Messi"><i
-                    class="fa-brands fa-square-instagram"></i></a>
-            <a href="https://www.facebook.com/leomessi/" class="icon_redes" target="_blank" title="facebook/Messi"><i
-                    class="fa-brands fa-square-facebook"></i></a>
-            <a href="https://www.youtube.com/user/LeoMessi" class="icon_redes" target="_blank" title="youtube/Messi"><i
-                    class="fa-brands fa-square-youtube"></i></a>
+
+    <div class="container-form">
+
+      <div class="header">
+        <h2> Formulario de registro</h2>
+      </div>
+
+      <form id="form" class="form" action="https://formsubmit.co/mdmp@outlook.com" method="POST">
+
+        <div class="form-control">
+          <label for="username">Nombre</label>
+          <input type="text" id="username" name="usernombre" placeholder="Ingrese su Nombre..." />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensaje de error</small>
         </div>
-        <a href="#navv" class="logo_div_foot">
-            <img class="logo_footer" src="../img/messi_logo.png" alt="logo" title="click para subir">
-        </a>
+
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="emailNombre" placeholder="Ingrese su Email..." />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensaje de error</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="pass" placeholder="Ingrese una contraseña..." />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensaje de error</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password-confirmation">Confirmación de Contraseña</label>
+          <input type="password" id="password-confirmation" placeholder="Confirme Contraseña..." />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensaje de error</small>
+        </div>
         <div>
-            <span class="copyright">&copy; Copyright 2023, Grupo 15 CaC - Codo a Codo. No rights reserved. </span>
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/templates/suscripcion.html">
+          <input type="hidden" name="_captcha" value="false">
         </div>
-    </footer>
+
+        <button type="submit" class="btn-login">Enviar</button>
+
+      </form>
+
+    </div>
+
+
+    <!--<ul class="star"></ul> -->
+    <ul class="squares"></ul>
+
+
+
+  </main>
+  <footer>
+    <div class="redes_sociales">
+      <a href="https://www.instagram.com/leomessi/" class="icon_redes" target="_blank" title="Instagram/Messi"><i
+          class="fa-brands fa-square-instagram"></i></a>
+      <a href="https://www.facebook.com/leomessi/" class="icon_redes" target="_blank" title="facebook/Messi"><i
+          class="fa-brands fa-square-facebook"></i></a>
+      <a href="https://www.youtube.com/user/LeoMessi" class="icon_redes" target="_blank" title="youtube/Messi"><i
+          class="fa-brands fa-square-youtube"></i></a>
+    </div>
+    <a href="#navv" class="logo_div_foot">
+      <img class="logo_footer" src="../img/messi_logo.png" alt="logo" title="click para subir">
+    </a>
+    <div>
+      <span class="copyright">&copy; Copyright 2023, Grupo 15 CaC - Codo a Codo. No rights reserved. </span>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+  <script src="/js/suscripcion.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </body>
 
 </html>

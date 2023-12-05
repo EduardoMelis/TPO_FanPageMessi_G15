@@ -1,123 +1,139 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  main {
-    width: 100%;
-    min-height: 100vh;
-    background-image: url(../img/messi\ espalda.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container {
-    background-color: #fafafa;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 400px;
-    max-width: 100%;
-    overflow: hidden;
-    z-index: 1;
-  }
-  
-  .header {
-    background-color: rgb(137 160 255);
-    padding: 20px;
+  box-sizing: border-box;
+}
 
-    
-    display: flex ;
-    justify-content: center;
-    align-items: center;
-  }
+main {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/messi\ espalda.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  
-  .form {
-    padding: 20px;
-  }
-  
-  .form-control {
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    position: relative;
-  }
-  
-  .form-control label {
-    display: inline-block;
-    margin-bottom: 5px;
-    font-family: "Kalam";
-    font-weight: 700;
-    font-size: 22px;
-  }
-  
-  .form-control input {
-    border: 2px solid #f0f0f0;
-    display: block;
-    border-radius: 10px;
-    width: 100%;
-    padding: 10px;
-    font-family: "Kalam";
-    font-weight: 400;
-    font-size: large;
-  }
-  
-  .form-control i {
-    position: absolute;
-    top: 45px;
-    right: 10px;
-    visibility: hidden;
-  }
-  
-  .form-control small {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
-  }
-  
-  .form button {
-    background-color: #1c1c8c;
-    border: 2px solid #f4f421;
-    color: #fff;
-    font-size: 14px;
-    width: 100%;
-    border-radius: 10px;
-    padding: 10px;
-  }
-  
-  /* datos :correctos-incorrectos */
-  .form-control.success input {
-    border-color: #2ecc71;
-  }
-  .form-control.error input {
-    border-color: #e74c3c;
-  }
+.container-form {
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  margin: 1rem;
+}
 
-  .form-control.success i.fa-check-circle {
-    color: #2ecc71;
-    visibility: visible;
-  }
-  .form-control.error i.fa-exclamation-circle {
-    color: #e74c3c;
-    visibility: visible;
-  }
-  
-  .form-control.error small {
-    visibility: visible;
-    color: #e74c3c;
-  }
+.header {
+  background-color: rgb(137 160 255);
+  padding: 20px 10px 20px 10px;
 
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+
+.form {
+  padding: 20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-family: "Kalam";
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  font-family: "Kalam";
+  font-weight: 400;
+  font-size: large;
+}
+
+.form-control i {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form button {
+  background-color: #1c1c8c;
+  border: 2px solid #f4f421;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* datos :correctos-incorrectos */
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.modal {
+  display: flex;
+}
+
+#ventana {
+  padding: 1rem;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+#boton-cerrar {
+  padding: 0.3rem;
+}
 
 /*------------------------------------------------*/
 
 /*Animacion amarrillas*/
 
 /**/
-.squares li { /*definiendo la figura*/
+.squares li {
+  /*definiendo la figura*/
   width: 100%;
   height: 40px;
   background-color: rgba(245, 249, 12, 0.5);
@@ -130,12 +146,14 @@
 /*Parametros*/
 @keyframes up {
   from {
-    opacity: 0; 
+    opacity: 0;
     transform: translateY(0);
   }
+
   50% {
     opacity: 1.5;
   }
+
   to {
     opacity: 0;
     transform: translateY(-900px) rotate(960deg);
