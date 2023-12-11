@@ -40,12 +40,12 @@
   <main>
 
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
       id="modal-ventana">
-    </button>
+    </button> -->
 
     <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
       aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -57,26 +57,26 @@
             <h3>Bienvenido, te has registrado con exito.</h3>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="boton-cerrar">Cerrar</button>
-            <!-- <button type="button" class="btn btn-primary" >Aceptar</button> -->
-          </div>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="boton-cerrar">Cerrar</button> -->
+    <!-- <button type="button" class="btn btn-primary" >Aceptar</button> -->
+    <!-- </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
 
-    <div class="container-form">
+    <div class="container-form" id="app">
 
       <div class="header">
         <h2> Formulario de registro</h2>
       </div>
 
-      <form id="form" class="form" action="https://formsubmit.co/mdmp@outlook.com" method="POST">
+      <form id="form" class="form" action="https://formsubmit.co/d8f3b2a91b3eec29ae202c3deb8d7ef4" method="POST">
 
         <div class="form-control">
           <label for="username">Nombre</label>
-          <input type="text" id="username" name="usernombre" placeholder="Ingrese su Nombre..." />
+          <input type="text" id="username" name="nombre" v-model="nombre" placeholder="Ingrese su Nombre..." required />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
           <small>Mensaje de error</small>
@@ -84,7 +84,7 @@
 
         <div class="form-control">
           <label for="email">Email</label>
-          <input type="text" id="email" name="emailNombre" placeholder="Ingrese su Email..." />
+          <input type="text" id="email" name="mail" v-model="mail" placeholder="Ingrese su Email..." required />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
           <small>Mensaje de error</small>
@@ -92,7 +92,8 @@
 
         <div class="form-control">
           <label for="password">Contraseña</label>
-          <input type="password" id="password" name="pass" placeholder="Ingrese una contraseña..." />
+          <input type="password" id="password" name="clave" v-model="clave" placeholder="Ingrese una contraseña..."
+            required />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
           <small>Mensaje de error</small>
@@ -100,7 +101,7 @@
 
         <div class="form-control">
           <label for="password-confirmation">Confirmación de Contraseña</label>
-          <input type="password" id="password-confirmation" placeholder="Confirme Contraseña..." />
+          <input type="password" id="password-confirmation" placeholder="Confirme Contraseña..." required />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
           <small>Mensaje de error</small>
@@ -110,7 +111,7 @@
           <input type="hidden" name="_captcha" value="false">
         </div>
 
-        <button type="submit" class="btn-login">Enviar</button>
+        <button type="submit" class="btn-login" v-on:click="grabar()">Enviar</button>
 
       </form>
 
@@ -141,7 +142,8 @@
   </footer>
   <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
   <script src="/js/suscripcion.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="/js/registrados.js"></script>
 </body>
 
 </html>

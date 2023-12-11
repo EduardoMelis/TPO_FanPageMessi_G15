@@ -55,18 +55,16 @@ function checkInputs() {
     return formControl.className === "form-control success";
   });
 
-  if (formIsValid) {
-    abrirventana.click();
-    // cuando el formulario es valido y se da click a enviar se dispara el evento click y abre el modal 
+  // if (formIsValid) {
+  //   grabar();
+  //   //cuando el formulario es valido y se da click a enviar se dispara el evento click y abre el modal 
+  // }
+  // cerrarventana.addEventListener("click", () => {
+  //   window.location.href = "../templates/suscripcion.html"
+  // este evento esta esperando que se le de click a cerrar el modal para recargar la pagina
 
 
-  }
-  cerrarventana.addEventListener("click", () => {
-    window.location.href = "../templates/suscripcion.html"
-    // este evento esta esperando que se le de click a cerrar el modal para recargar la pagina
-
-
-  })
+  // })
 
 }
 
