@@ -2,8 +2,8 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            registrado: [],
-            url: "https://messi2040.pythonanywhere.com/",
+
+            url: "http://127.0.0.1:5000/",
             error: false,
             cargando: true,
 
@@ -14,33 +14,22 @@ createApp({
 
     },
     methods: {
-        fetchData(url) {
-            fetch(url)
-                .then(response => response.json())
-                .then(data => {
-                    this.registrado = data;
-                    this.cargando = false
-                })
-                .catch(err => {
-                    console.error(err);
-                    this.error = true
-                })
-        },
-        eliminar(id) {
-            console.log(id)
-            const url = this.url + "borrar/" + id;
+
+        eliminar(mail) {
+            console.log(mail)
+            const url = this.url + "borrar/" + mail;
             console.log(url);
             var options = {
                 method: "DELETE",
             }
-            if (confirm('¿Estás seguro de que quieres eliminar este registro?')) {
+            if (confirm("¿Estás seguro de que quieres eliminar:  " + this.mail + " ?")) {
                 fetch(url, options)
-                    //.then(res => res.json())//ver si no me conviene res.json()
+
                     .then(res => {
                         if (res.ok) {
-                            alert("Eliminado correctamente")
-                            //location.reload();
-                            return res.json();
+                            alert("Eliminado correctamente: " + this.nombre + "\n" + this.mail)
+                            location.reload();
+                            return res.json()
                         }
 
                     })
@@ -56,7 +45,6 @@ createApp({
                 nombre: this.nombre,
                 clave: this.clave
             }
-            console.log(registrado)
             var options = {
                 body: JSON.stringify(registrado),
                 method: "POST",
@@ -74,28 +62,61 @@ createApp({
 
 
         },
-        consultar(id) {
-            console.log(id)
-            const url = this.url + "registrado/" + id;
+        consultar(mail) {
+
+            const url = this.url + "registrado/" + mail;
             console.log(url);
             var options = {
                 method: "GET",
             }
-            if (confirm('¿Estás seguro de que quieres consultar este registro?')) {
+            if (confirm("¿Estás seguro de que quieres consultar:  " + this.mail + " ?")) {
                 fetch(url, options)
-                    //.then(res => res.json())//ver si no me conviene res.json()
-                    .then(res => {
-                        if (res.ok) {
-                            alert(" correctamente")
-                            //location.reload();
-                            return res.json();
+                    //.then(response => response.json())
+                    .then(response => {
+                        if (response.ok) {
+                            return response.json()
+                        } else {
+                            //Si la respuesta es un error, lanzamos una excepción para ser "catcheada" más adelante en el catch.
+                            throw new Error('Error al obtener los datos del producto.')
                         }
-
                     })
+                    .then(data => {
+                        this.nombre = data[0].nombre;
+                        this.clave = data[0].clave;
+                        console.log(data[0]);
+                        console.log(this.nombre)
+                    })
+
+
                     .catch(error => {
-                        alert(error.message);
+                        console.log(error);
+                        alert(this.mail + ' No registrado.');
                     });
             }
+        },
+        modificar(mail) {
+            const url = this.url + "update/" + mail;
+            let actualizar = {
+                mail: this.mail,
+                nombre: this.nombre,
+                clave: this.clave
+            }
+            var options = {
+                body: JSON.stringify(actualizar),
+                method: "PUT",
+                headers: { "Content-Type": "application/json" },
+
+            }
+            fetch(url, options)
+                .then(res => {
+                    if (res.ok) {
+                        alert("Se actualizo correctamente: " + this.nombre + "\n" + this.mail)
+                        location.reload();
+                    }
+                })
+                .catch(error => {
+                    alert(error.message);
+                });
         }
         // created() { //metodo de vue que se lanza cada vez que ingresamos al suscripcion .html
         //     this.fetchData(this.url)

@@ -42,7 +42,7 @@
                 <h2> Administrar </h2>
             </div>
 
-            <form id="form" class="form">
+            <form id="form" class="form" onsubmit="return false;">
 
                 <div class="form-control">
                     <label for="username">Nombre</label>
@@ -62,25 +62,18 @@
 
                 <div class="form-control">
                     <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="clave" v-model="clave" placeholder="contraseña" />
-                    <i class="fas fa-exclamation-circle"></i>
-                    <i class="fas fa-check-circle"></i>
-                    <small>Mensaje de error</small>
-                </div>
-
-                <div class="form-control">
-                    <label for="password-confirmation">Numero de ID</label>
-                    <input type="text" id="password-confirmation" placeholder="Numero de ID" name="id" v-model="id"
-                        required />
+                    <input type="text" id="password" name="clave" v-model="clave" placeholder="contraseña" />
                     <i class="fas fa-exclamation-circle"></i>
                     <i class="fas fa-check-circle"></i>
                     <small>Mensaje de error</small>
                 </div>
 
 
-                <button type="submit" class="btn-login" v-on:click="eliminar(id)">Eliminar</button>
-                <button type="submit" class="btn-login" v-on:click="consultar(id)">Consultar</button>
-                <button type="submit" class="btn-login" v-on:click="modificar(id)">Modificar</button>
+
+
+                <button type="submit" class="btn-login" v-on:click="eliminar(mail)">Eliminar</button>
+                <button type="submit" class="btn-login" v-on:click="consultar(mail)">Consultar</button>
+                <button type="submit" class="btn-login" v-on:click="modificar(mail)">Modificar</button>
             </form>
 
         </div>
