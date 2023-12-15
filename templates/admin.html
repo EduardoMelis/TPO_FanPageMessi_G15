@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -39,10 +39,17 @@
         <div class="container-form" id="app">
 
             <div class="header">
-                <h2> Administrar </h2>
+                <h2> Admin </h2>
             </div>
 
             <form id="form" class="form" onsubmit="return false;">
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="mail" v-model="mail" placeholder="Email" />
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensaje de error</small>
+                </div>
 
                 <div class="form-control">
                     <label for="username">Nombre</label>
@@ -52,13 +59,6 @@
                     <small>Mensaje de error</small>
                 </div>
 
-                <div class="form-control">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="mail" v-model="mail" placeholder="Email" />
-                    <i class="fas fa-exclamation-circle"></i>
-                    <i class="fas fa-check-circle"></i>
-                    <small>Mensaje de error</small>
-                </div>
 
                 <div class="form-control">
                     <label for="password">Contraseña</label>
@@ -70,10 +70,10 @@
 
 
 
-
+                <button type="submit" class="btn-login" v-on:click="grabar(mail)">Alta</button>
                 <button type="submit" class="btn-login" v-on:click="eliminar(mail)">Eliminar</button>
-                <button type="submit" class="btn-login" v-on:click="consultar(mail)">Consultar</button>
                 <button type="submit" class="btn-login" v-on:click="modificar(mail)">Modificar</button>
+                <button type="submit" class="btn-login" v-on:click="consultar(mail)">Consultar</button>
             </form>
 
         </div>
